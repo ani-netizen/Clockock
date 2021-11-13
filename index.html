@@ -18,7 +18,7 @@
 
 		h1 {
 			color: white;
-			text-shadow:aquamarine 7px 7px 5px;
+			text-shadow:aquamarine 6px 6px 5px;
 			font-size: 3rem;
 			margin-top: 1rem;
 		}
@@ -117,8 +117,8 @@
 			const hours = now.getHours();
 
 			const secHandDeg = (seconds / 60) * 360;
-			const minHandDeg = ((minutes / 60) * 360) + ((seconds / 60) * 5);
-			const hourHandDeg = ((hours / 12) * 360) + ((minutes / 60) * 5);
+			const minHandDeg = ((minutes / 60) * 360) + ((seconds / 60) * 6);
+			const hourHandDeg = ((hours / 12) * 360) + ((minutes / 60) * 30);
 
 			secHand.style.transform = `rotate(${secHandDeg}deg)`;
 			minHand.style.transform = `rotate(${minHandDeg}deg)`;
