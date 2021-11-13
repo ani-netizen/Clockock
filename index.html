@@ -16,22 +16,30 @@
 			box-sizing: border-box;
 		}
 
+		h1 {
+			color: white;
+			text-shadow:aquamarine 7px 7px 5px;
+			font-size: 3rem;
+			margin-top: 1rem;
+		}
+
 		body {
 			background: url(./assets/background.jpg);
 			background-repeat: no-repeat;
 			background-position: right;
 			background-size: auto;
 			display: flex;
-			justify-content: center;
+			flex-direction: column;
+			align-items: center;
 		}
 
 		.clock {
-			width: 12.5rem;
-			height: 12.5rem;
+			width: 12rem;
+			height: 12rem;
 			border: 13px solid whitesmoke;
 			border-radius: 50%;
-			margin-top: 6rem;
-			box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.75), inset 0 0 5px 5px rgba(0, 0, 0, 0.6);
+			margin-top: 5rem;
+			box-shadow: 0 0 15px 3px aqua, inset 0 0 15px 3px aqua;
 		}
 
 		.clock-face {
@@ -87,6 +95,7 @@
 </head>
 
 <body>
+	<h1>Clockock</h1>
 	<div class="clock">
 		<div class="clock-face">
 			<div class="center"></div>
